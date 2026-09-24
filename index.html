@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kuuba — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo"><img src="assets/logo-kuuba-biale-beztla.png" alt="Kuuba Logo"></div>
+    <ul>
+      <li><a href="#focus">Czym się zajmuję</a></li>
+      <li><a href="#projekty">Projekty</a></li>
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#jezyki">Języki</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-glow" id="glow"></div>
+  <div class="hero-content wrap">
+    <p class="eyebrow">Programista / twórca stron</p>
+    <h1>Kuuba</h1>
+    <p class="sub">Buduję strony, aplikacje, oraz tworzę grafiki które działają szybko i wyglądają tak, jak powinny.</p>
+    <div class="scroll-hint">przewiń w dół ↓</div>
+  </div>
+</section>
+
+<section id="focus">
+  <div class="wrap">
+    <p class="kicker">Czym się zajmuję</p>
+    <h2 class="sec-title">Od pomysłu po działający produkt.</h2>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Front-end</h3>
+        <p>Interfejsy budowane w HTML, CSS i JavaScript — responsywne, lekkie i przyjemne w obsłudze.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Back-end</h3>
+        <p>Logika aplikacji, przetwarzanie danych i skrypty w Pythonie, które robią to, co trzeba.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Detale</h3>
+        <p>Dbam o animacje, dostępność i drobiazgi, które sprawiają, że strona wygląda dopracowanie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projekty">
+  <div class="wrap">
+    <p class="kicker">Wybrane realizacje</p>
+    <h2 class="sec-title">Projekty</h2>
+    <div class="proj-grid">
+      <div class="proj-card proj-card--preview" tabindex="0" role="button" aria-label="Otwórz pełny podgląd projektu CloudRP" data-image="assets/cloudrp.jpg" data-image-alt="CloudRP - strona główna">
+        <div class="thumb"><img src="assets/cloudrp.jpg" alt="CloudRP - strona główna"><div class="thumb-fade"></div></div>
+        <div class="info">
+          <h3>CloudRP</h3>
+          <p>Strona główna serwera FiveM RP — jedna z moich pierwszych stron internetowych.</p>
+          <span class="preview-hint">Kliknij, aby zobaczyć pełny podgląd</span>
+        </div>
+      </div>
+      <div class="proj-card proj-card--preview" tabindex="0" role="button" aria-label="Otwórz pełny podgląd projektu Sklep internetowy" data-image="assets/apple ipad.png" data-image-alt="Apple iPad - strona do zamówienia">
+        <div class="thumb"><img src="assets/apple ipad.png" alt="Apple iPad - strona do zamówienia"><div class="thumb-fade"></div></div>
+        <div class="info">
+          <h3>Apple iPad - odwzorowanie prawdziwej strony w Figmie</h3>
+          <p>Odwzorowanie prawdziwej strony internetowej Apple do zakupu iPada. </p>
+          <span class="preview-hint">Kliknij, aby zobaczyć pełny podgląd</span>
+        </div>
+      </div>
+      <div class="proj-card proj-card--preview" tabindex="0" role="button" aria-label="Otwórz pełny podgląd projektu DogPhoto" data-image="assets/dogphoto.png" data-image-alt="DogPhoto - zamów zdjęcia swojego psa">
+        <div class="thumb"><img src="assets/dogphoto.png" alt="DogPhoto - zamów zdjęcia swojego psa"><div class="thumb-fade"></div></div>
+        <div class="info">
+          <h3>DogPhoto - zamów zdjęcia swojego psa, projekt w Figmie</h3>
+          <p>Projekt strony DogPhoto gdzie możesz zamówić zdjęcia swojego psa.</p>
+          <span class="preview-hint">Kliknij, aby zobaczyć pełny podgląd</span>
+        </div>
+      </div>
+      <div class="proj-card proj-card--preview" tabindex="0" role="button" aria-label="Otwórz pełny podgląd projektu DogPhoto" data-image="assets/miniaturka graf.png" data-image-alt="DogPhoto - zamów zdjęcia swojego psa">
+        <div class="thumb"><img src="assets/miniaturka graf.png" alt="Graf - odwzorowanie miniaturki"><div class="thumb-fade"></div></div>
+        <div class="info">
+          <h3>Graf - odwzorowanie miniaturki</h3>
+          <p>Projekt odwzorowania miniaturki Grafa na YouTube</p>
+          <span class="preview-hint">Kliknij, aby zobaczyć pełny podgląd</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="image-modal" id="image-modal" role="dialog" aria-modal="true" aria-label="Pełny podgląd projektu" hidden>
+  <button class="image-modal__close" type="button" aria-label="Zamknij podgląd">&times;</button>
+  <img class="image-modal__image" id="image-modal-image" alt="">
+</div>
+
+<section id="o-mnie">
+  <div class="wrap">
+    <p class="kicker">Kim jestem</p>
+    <h2 class="sec-title">O mnie</h2>
+    <div class="about">
+      <div>
+        <p>Nazywam się Kuba i tworzę strony internetowe, aplikacje i grafiki. Zaczynałem od małych skryptów, dziś łączę front-end i back-end w spójne, działające projekty.</p>
+        <p>Interesuje mnie prosty, czytelny kod i interfejsy, które nie wymagają instrukcji obsługi. Lubię się uczyć nowych narzędzi i sprawdzać, jak daleko można je zabrać.</p>
+      </div>
+      <div>
+        <div class="about-stat">
+          <div class="num">4</div>
+          <div class="label">języki programowania na co dzień</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">100%</div>
+          <div class="label">projektów w pełni responsywnych</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jezyki">
+  <div class="wrap">
+    <p class="kicker">Narzędzia</p>
+    <h2 class="sec-title">Języki, w których programuję, oraz aplikacje, w których tworzę grafiki</h2>
+    <div class="lang-grid">
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><title>html</title><path fill="#e65100" d="m4 4l2 22l10 2l10-2l2-22Zm19.72 7H11.28l.29 3h11.86l-.802 9.335L15.99 25l-6.635-1.646L8.93 19h3.02l.19 2l3.86.77l3.84-.77l.29-4H8.84L8 8h16Z"/></svg>
+        <span>HTML</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>css-solid</title><path fill="currentColor" d="m3 2l1.578 17.834L12 22l7.468-2.165L21 2zm13.3 14.722l-4.293 1.204H12l-4.297-1.204l-.297-3.167h2.108l.15 1.526l2.335.639l2.34-.64l.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506z"/></svg>
+        <span>CSS</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><title>javascript</title><path fill="#f0db4f" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981c-3.832-1.761-8.104-3.022-9.377-5.926c-.452-1.69-.512-2.642-.226-3.665c.821-3.32 4.784-4.355 7.925-3.403c2.023.678 3.938 2.237 5.093 4.724c5.402-3.498 5.391-3.475 9.163-5.879c-1.381-2.141-2.118-3.129-3.022-4.045c-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235c-5.926 6.724-4.236 18.492 2.975 23.335c7.104 5.332 17.54 6.545 18.873 11.531c1.297 6.104-4.486 8.08-10.234 7.378c-4.236-.881-6.592-3.034-9.139-6.949c-4.688 2.713-4.688 2.713-9.508 5.485c1.143 2.499 2.344 3.63 4.26 5.795c9.068 9.198 31.76 8.746 35.83-5.176c.165-.478 1.261-3.666.38-8.581M69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149c-1.713 3.558-6.152 3.117-8.175 2.427c-2.059-1.012-3.106-2.451-4.319-4.485c-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901c4.462 2.678 10.459 3.499 16.731 2.059c4.082-1.189 7.604-3.652 9.448-7.401c2.666-4.915 2.094-10.864 2.07-17.444c.06-10.735.001-21.468.001-32.237"/></svg>
+        <span>JavaScript</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>python</title><path fill="#0288d1" d="M9.86 2A2.86 2.86 0 0 0 7 4.86v1.68h4.29c.39 0 .71.57.71.96H4.86A2.86 2.86 0 0 0 2 10.36v3.781a2.86 2.86 0 0 0 2.86 2.86h1.18v-2.68a2.85 2.85 0 0 1 2.85-2.86h5.25c1.58 0 2.86-1.271 2.86-2.851V4.86A2.86 2.86 0 0 0 14.14 2zm-.72 1.61c.4 0 .72.12.72.71s-.32.891-.72.891c-.39 0-.71-.3-.71-.89s.32-.711.71-.711"/><path fill="#fdd835" d="M17.959 7v2.68a2.85 2.85 0 0 1-2.85 2.859H9.86A2.85 2.85 0 0 0 7 15.389v3.75a2.86 2.86 0 0 0 2.86 2.86h4.28A2.86 2.86 0 0 0 17 19.14v-1.68h-4.291c-.39 0-.709-.57-.709-.96h7.14A2.86 2.86 0 0 0 22 13.64V9.86A2.86 2.86 0 0 0 19.14 7zM8.32 11.513l-.004.004l.038-.004zm6.54 7.276c.39 0 .71.3.71.89a.71.71 0 0 1-.71.71c-.4 0-.72-.12-.72-.71s.32-.89.72-.89"/></svg>
+        <span>Python</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>figma-bold</title><path fill="currentColor" fill-rule="evenodd" d="M8.66699 9.41667C7.24021 9.41667 6.08366 10.5731 6.08366 11.9998C6.08366 13.4266 7.24026 14.5832 8.66699 14.5832H11.2503V12.0519C11.2501 12.0346 11.25 12.0172 11.25 11.9998C11.25 11.9825 11.2501 11.9651 11.2503 11.9478V9.41667H8.66699ZM11.2503 7.91667H8.66699C7.24026 7.91667 6.08366 6.76007 6.08366 5.33333C6.08366 3.9066 7.24026 2.75 8.66699 2.75H11.2503V7.91667ZM12.7503 2.75V7.91663L15.333 7.9165C16.7597 7.9165 17.9167 6.76002 17.9167 5.33333C17.9167 3.9066 16.7601 2.75 15.3333 2.75H12.7503ZM15.3331 9.4165C13.9203 9.41664 12.7724 10.5509 12.7503 11.9584V12.0412C12.7724 13.4489 13.9204 14.5832 15.3333 14.5832C16.7601 14.5832 17.9167 13.4266 17.9167 11.9998C17.9167 10.5731 16.7598 9.41652 15.3331 9.4165ZM8.66699 16.0832C7.2403 16.0832 6.0835 17.24 6.0835 18.6668C6.0835 20.0936 7.24009 21.2502 8.66683 21.2502C10.0936 21.2502 11.2502 20.0936 11.2502 18.6668L11.2503 16.0832H8.66699Z" clip-rule="evenodd"/></svg>
+        <span>Figma</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><title>canva</title><path fill="currentColor" d="M16 0C7.161 0 0 7.161 0 16s7.161 16 16 16s16-7.161 16-16S24.839 0 16 0M9.281 10.24c1.005 0 1.787.733 1.875 1.599c.095.781-.229 1.464-1.093 1.875c-.459.229-.641.229-.735.093c-.047-.093 0-.181.093-.276c.824-.681.824-1.233.729-2.009c-.047-.505-.411-.824-.776-.824c-1.604 0-3.885 3.563-3.568 6.172c.141 1.005.735 2.193 2.011 2.193c.412 0 .871-.136 1.281-.317c.667-.355 1.068-.625 1.464-1.068c-.099-1.183.937-2.729 2.468-2.729c.688 0 1.235.276 1.281.781c.089.683-.505.776-.687.776s-.505-.047-.505-.229c-.041-.183.411-.093.369-.505c-.047-.276-.323-.364-.593-.364c-.964 0-1.511 1.328-1.375 2.145c.047.369.228.735.599.735c.271 0 .683-.412.817-1.005c.093-.412.459-.688.781-.688c.136 0 .224.047.271.229v.183c-.041.183-.183.735-.135.869c0 .095.047.229.228.229c.12 0 .579-.24 1.037-.615c.151-.787.333-1.729.333-1.807c.047-.323.183-.641.823-.641c.14 0 .229.047.276.229v.183l-.183.823c.595-.776 1.464-1.323 2.011-1.323c.229 0 .412.135.412.364c0 .136 0 .365-.095.595c-.181.5-.411 1.281-.547 1.963c0 .183.047.365.276.365s.912-.271 1.459-1.005l.011-.005c0-.089-.011-.177-.011-.265c0-.552.047-1.005.141-1.328c.093-.365.547-.683.823-.683c.135 0 .276.088.276.224c0 .047 0 .14-.047.183c-.183.599-.324 1.145-.324 1.692c0 .323.048.776.141 1.052c0 .047.041.093.088.093c.095 0 .735-.593 1.188-1.375c-.412-.271-.641-.729-.641-1.276c0-.963.6-1.464 1.147-1.464c.459 0 .823.319.823.959c0 .412-.136.871-.364 1.281h.135c.292.011.579-.109.776-.317a.4.4 0 0 1 .183-.156c.448-.568 1.104-.989 1.88-.989c.64 0 1.229.276 1.276.776c.093.687-.505.823-.688.823c-.181 0-.504-.047-.504-.229s.411-.093.369-.5c-.047-.276-.323-.369-.599-.369c-.912 0-1.505 1.187-1.371 2.151c.047.364.229.776.595.776c.276 0 .687-.412.869-1.005c.088-.364.459-.688.776-.688c.14 0 .229.047.276.229c0 .095 0 .276-.183.871c-.229.411-.229.64-.181.823c.041.364.224.64.411.776a1 1 0 0 1 .089.135c0 .095-.048.188-.183.188c-.047 0-.089 0-.136-.047c-.687-.276-.963-.735-1.052-1.193c-.276.323-.593.505-.963.505c-.595 0-1.183-.547-1.276-1.235a2.1 2.1 0 0 1 .099-.864c-.271.172-.563.271-.833.271h-.224c-.599.869-1.24 1.464-1.693 1.735a1.2 1.2 0 0 1-.505.14c-.088 0-.228-.047-.271-.14c-.129-.203-.208-.521-.26-.885c-.641.697-1.527 1.072-1.937 1.072c-.459 0-.729-.276-.776-.733v-.5c.135-1.005.505-1.604.505-1.787a.105.105 0 0 0-.095-.093c-.317 0-1.369 1.099-1.552 1.833l-.14.593c-.089.411-.5.687-.776.687c-.136 0-.229-.047-.271-.228v-.183l.057-.312c-.579.411-1.157.676-1.433.676c-.411 0-.64-.229-.681-.552c-.276.371-.595.552-1.005.552c-.475 0-.932-.323-1.151-.791c-.329.369-.699.739-1.136 1.02c-.64.412-1.369.729-2.24.729c-.776 0-1.463-.412-1.828-.776c-.552-.505-.869-1.281-.916-2.011c-.271-2.239 1.099-5.12 3.197-6.401c.505-.276 1.011-.457 1.511-.457zm13.026 4.391c-.135 0-.228.229-.228.452c0 .371.181.781.411 1.011a2.3 2.3 0 0 0 .141-.781c0-.452-.183-.681-.324-.681z"/></svg>
+        <span>Canva</span>
+      </div>
+      <div class="lang-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><title>photoshop</title><path fill="#001e36" d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6"/><path fill="#31a8ff" d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z"/></svg>
+        <span>Photoshop</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <p class="kicker">Napisz</p>
+    <h2 class="sec-title">Kontakt</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="label">Email</div>
+        <a class="value" href="mailto:kuubax@proton.me">kuubax@proton.me</a>
+      </div>
+      <div class="contact-item">
+        <div class="label">Discord</div>
+        <a class="value" href="https://discord.com/users/kuuba.a.">kuuba.a.</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Kuuba/NicenDesign. Wszystkie prawa zastrzeżone.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
