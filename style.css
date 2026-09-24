@@ -18,7 +18,8 @@
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-  h1,h2,h3{font-family:'Space Grotesk',sans-serif; margin:0;}
+  h1,h2{font-family:'Limelight',cursive; margin:0;}
+  h3{font-family:'Asap Sharp',sans-serif; margin:0;}
   a{color:inherit;}
   .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
   @media(max-width:640px){.wrap{padding:0 20px;}}
