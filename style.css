@@ -143,8 +143,14 @@
   .contact-item:hover{background:var(--bg-2);}
   .contact-item .label{color:var(--muted); font-size:13px; margin-bottom:10px;}
   .contact-item .value{font-family:'Space Grotesk',sans-serif; font-size:20px;}
+  .contact-value-row{display:flex; align-items:center; gap:12px;}
   .contact-item a.value{text-decoration:none; color:var(--ink); transition:color .2s;}
   .contact-item a.value:hover{color:var(--red-1);}
+  .copy-button{position:relative; display:inline-flex; align-items:center; justify-content:center; flex:0 0 36px; width:36px; height:36px; padding:8px; border:1px solid var(--line); background:transparent; color:var(--muted); cursor:pointer; transition:color .2s, border-color .2s, background .2s;}
+  .copy-button:hover,.copy-button:focus-visible{border-color:var(--red-1); color:var(--red-1); background:var(--bg-2);}
+  .copy-button.is-copied{border-color:var(--red-1); color:var(--red-1);}
+  .copy-button svg{width:19px; height:19px;}
+  .copy-button__status{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
   .contact-item .value.empty{color:var(--muted); font-weight:400; font-size:16px;}
 
   footer{border-top:1px solid var(--line); padding:36px 0; text-align:center; color:var(--muted); font-size:13px;}
