@@ -53,3 +53,38 @@ const glow = document.getElementById('glow');
   document.addEventListener('keydown', (event)=>{
     if(event.key === 'Escape' && !imageModal.hidden) closeImagePreview();
   });
+
+  async function copyText(text){
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.setAttribute('readonly', '');
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.select();
+    const copied = document.execCommand('copy');
+    textArea.remove();
+    if(!copied) throw new Error('Copy failed');
+  }
+
+  document.querySelectorAll('.copy-button').forEach((button)=>{
+    button.addEventListener('click', async ()=>{
+      const status = button.querySelector('.copy-button__status');
+      try{
+        await copyText(button.dataset.copy);
+        status.textContent = 'Skopiowano';
+        button.classList.add('is-copied');
+        window.setTimeout(()=>{
+          status.textContent = '';
+          button.classList.remove('is-copied');
+        }, 1600);
+      }catch(error){
+        status.textContent = 'Nie udało się skopiować';
+      }
+    });
+  });
