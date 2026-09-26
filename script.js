@@ -72,19 +72,31 @@ const glow = document.getElementById('glow');
     if(!copied) throw new Error('Copy failed');
   }
 
-  document.querySelectorAll('.copy-button').forEach((button)=>{
-    button.addEventListener('click', async ()=>{
-      const status = button.querySelector('.copy-button__status');
-      try{
-        await copyText(button.dataset.copy);
-        status.textContent = 'Skopiowano';
-        button.classList.add('is-copied');
-        window.setTimeout(()=>{
-          status.textContent = '';
-          button.classList.remove('is-copied');
-        }, 1600);
-      }catch(error){
-        status.textContent = 'Nie udało się skopiować';
+  document.querySelectorAll('.proj-card').forEach((card)=>{
+    card.addEventListener('click', ()=>{
+      const externalUrl = card.dataset.externalUrl;
+      if(externalUrl){
+        window.open(externalUrl, '_blank', 'noopener,noreferrer');
+        return;
+      }
+
+      if(card.classList.contains('proj-card--preview')){
+        openImagePreview(card);
       }
     });
+
+    card.addEventListener('keydown', (event)=>{
+      if(event.key === 'Enter' || event.key === ' '){
+        event.preventDefault();
+        card.click();
+      }
+    });
+  });
+
+  closeModalButton.addEventListener('click', closeImagePreview);
+  imageModal.addEventListener('click', (event)=>{
+    if(event.target === imageModal) closeImagePreview();
+  });
+  document.addEventListener('keydown', (event)=>{
+    if(event.key === 'Escape' && !imageModal.hidden) closeImagePreview();
   });
